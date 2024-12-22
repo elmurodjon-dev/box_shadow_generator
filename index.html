@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Box Shadow Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-shadow-options-container">
+            <div class="box-shadow-text">
+                <h4>Box Shadow Options:</h4>
+            </div>
+            <div class="box-shadow-content-container">
+                <div class="box-shadow-content">
+                    <p>Horizontal Shadow Length:</p>
+                    <input type="range" id="horizontal-shadow" min="-50" max="50" value="10">
+                </div>
+                <div class="box-shadow-content">
+                    <p>Vertical Shadow Length:</p>
+                    <input type="range" id="vertical-shadow" min="-50" max="50" value="10">
+                </div>
+                <div class="box-shadow-content">
+                    <p>Blur Radius:</p>
+                    <input type="range" id="blur-radius" min="0" max="100" value="20">
+                </div>
+                <div class="box-shadow-content">
+                    <p>Spread Radius:</p>
+                    <input type="range" id="spread-radius" min="-50" max="50" value="5">
+                </div>
+                <div class="box-shadow-content">
+                    <p>Shadow Color:</p>
+                    <input type="color" id="shadow-color" value="#000000">
+                </div>
+                <div class="box-shadow-content">
+                    <p>Shadow Color Opacity:</p>
+                    <input type="range" id="shadow-color-opacity" min="0" max="1" step="0.1" value="0.5">
+                </div>
+            </div>
+        </div>
+        <div class="box" id="box"></div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
+
+
+<!-- codepen -->
